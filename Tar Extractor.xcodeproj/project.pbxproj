@@ -14,6 +14,8 @@
 		0F10037D2240D47300637338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F10037C2240D47300637338 /* Assets.xcassets */; };
 		0F1003802240D47300637338 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F10037F2240D47300637338 /* main.m */; };
 		0F10038A2240D47300637338 /* Tar_ExtractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1003892240D47300637338 /* Tar_ExtractorTests.m */; };
+		0F9826EE22423FB400C94752 /* NSFileManager+Tar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9826EC22423FB400C94752 /* NSFileManager+Tar.m */; };
+		0F9826F22242498A00C94752 /* example.tar in Resources */ = {isa = PBXBuildFile; fileRef = 0F9826F12242498A00C94752 /* example.tar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		0F1003852240D47300637338 /* Tar ExtractorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tar ExtractorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1003892240D47300637338 /* Tar_ExtractorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tar_ExtractorTests.m; sourceTree = "<group>"; };
 		0F10038B2240D47300637338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F9826EC22423FB400C94752 /* NSFileManager+Tar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Tar.m"; sourceTree = "<group>"; };
+		0F9826ED22423FB400C94752 /* NSFileManager+Tar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Tar.h"; sourceTree = "<group>"; };
+		0F9826F12242498A00C94752 /* example.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = example.tar; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,8 @@
 		0F10036F2240D47000637338 /* Tar Extractor */ = {
 			isa = PBXGroup;
 			children = (
+				0F9826F12242498A00C94752 /* example.tar */,
+				0F9826EB22423FA800C94752 /* Misc */,
 				0F1003702240D47000637338 /* AppDelegate.h */,
 				0F1003712240D47000637338 /* AppDelegate.m */,
 				0F1003732240D47000637338 /* ViewController.h */,
@@ -101,6 +108,15 @@
 				0F10038B2240D47300637338 /* Info.plist */,
 			);
 			path = "Tar ExtractorTests";
+			sourceTree = "<group>";
+		};
+		0F9826EB22423FA800C94752 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				0F9826ED22423FB400C94752 /* NSFileManager+Tar.h */,
+				0F9826EC22423FB400C94752 /* NSFileManager+Tar.m */,
+			);
+			path = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F9826F22242498A00C94752 /* example.tar in Resources */,
 				0F10037D2240D47300637338 /* Assets.xcassets in Resources */,
 				0F10037B2240D47000637338 /* Main.storyboard in Resources */,
 			);
@@ -202,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F9826EE22423FB400C94752 /* NSFileManager+Tar.m in Sources */,
 				0F1003752240D47000637338 /* ViewController.m in Sources */,
 				0F1003782240D47000637338 /* Tar_Extractor.xcdatamodeld in Sources */,
 				0F1003802240D47300637338 /* main.m in Sources */,
